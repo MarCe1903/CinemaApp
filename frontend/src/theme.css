@@ -1,0 +1,75 @@
+.site-header{gap:clamp(18px,3vw,42px)}
+.header-actions{gap:14px;flex-shrink:0}
+.header-preferences{display:flex;align-items:center;gap:7px}
+.preference-control{height:36px;min-width:36px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:8px;background:#222720;border:1px solid #363c31;color:#cad3c3;padding:0 9px}
+.preference-control:hover{background:#303729;border-color:#708052}
+.theme-control{padding:0;color:var(--accent)}
+.language-control{font-size:10px;font-weight:700;letter-spacing:.4px}
+.language-control .selected-language{color:var(--accent)}
+.language-separator{color:var(--muted);opacity:.5}
+:root[data-theme=light]{color-scheme:light;color:#202b1c;background:#f5f7f0;--accent:#48651d;--muted:#63705c;--line:#d7dfcf;--panel:#fff}
+[data-theme=light] .preference-control,[data-theme=light] .button.subtle{background:#fff;border-color:#d1dbc8;color:#324628}
+[data-theme=light] .preference-control:hover,[data-theme=light] .button.subtle:hover{background:#e8eedf;border-color:#879b6b}
+[data-theme=light] .theme-control{color:#48651d}
+[data-theme=light] .location{color:#63705c}
+[data-theme=light] .button.primary{background:#d0ee86;color:#243015;border-color:#c0dc79}
+[data-theme=light] .button.primary:hover:not(:disabled){background:#c2e66a}
+[data-theme=light] .hero{color:#f2f3ec;--accent:#d5f66b;--muted:#c2ccba}
+[data-theme=light] .hero .button.primary{background:#d5f66b;color:#1b2513}
+[data-theme=light] .poster-button{color:#f2f3ec}
+[data-theme=light] .genre{color:#63705c}
+[data-theme=light] .genre:hover{background:#e8eedf;color:#304623}
+[data-theme=light] .genre.active{background:#e6efcf;border-color:#b8cb93;color:#48651d}
+[data-theme=light] .search{background:#fff;color:#63705c}
+[data-theme=light] .search input,[data-theme=light] .results-row select{color:#304623}
+[data-theme=light] .results-row,[data-theme=light] .movie-card-bottom,[data-theme=light] .movie-tags{color:#63705c}
+[data-theme=light] .experience{background:radial-gradient(ellipse at 0 100%,#dcebc4,transparent 60%),#eef3e6;border-color:#d0ddc1}
+[data-theme=light] .experience p{color:#63705c}
+[data-theme=light] .experience-details{border-color:#c5d4b4}
+[data-theme=light] .experience-details strong,[data-theme=light] .empty h3{color:#25351c}
+[data-theme=light] footer>span{color:#63705c}
+[data-theme=light] .dialog{background:#fbfcf8;color:#202b1c;border-color:#c8d4bb;box-shadow:0 24px 100px #21351033}
+[data-theme=light] .dialog::backdrop{background:#26371b80}
+[data-theme=light] .icon-button{background:#e8eedf;color:#415336}
+[data-theme=light] .icon-button:hover{background:#d9e5cb}
+[data-theme=light] .auth-symbol{background:#e6efcf}
+[data-theme=light] .form-stack label{color:#405036}
+[data-theme=light] .form-stack input,[data-theme=light] .admin-box textarea,[data-theme=light] .admin-box select,[data-theme=light] .admin-user-search{color:#25351c;background:#fff;border-color:#c8d4bb}
+[data-theme=light] .form-stack input::placeholder,[data-theme=light] .admin-user-search::placeholder{color:#77866c}
+[data-theme=light] .error{background:#fff0eb;border-color:#edc4b8;color:#a33d2c}
+[data-theme=light] .form-stack .field-error{color:#a33d2c}
+[data-theme=light] .form-stack input[aria-invalid=true]{border-color:#bd5942}
+[data-theme=light] .date-choice,[data-theme=light] .time-choice,[data-theme=light] .order-summary{background:#eef3e6;border-color:#cfdbc3}
+[data-theme=light] .date-choice small,[data-theme=light] .order-summary dt{color:#63705c}
+[data-theme=light] .date-choice.selected,[data-theme=light] .time-choice.selected{background:#e3efca;border-color:#819f4c;color:#405b18}
+[data-theme=light] .order-total{border-color:#b5c69d}
+[data-theme=light] .steps .active>span,[data-theme=light] .success-icon{background:#d0ee86;border-color:#97b45b;color:#30451a}
+[data-theme=light] .screen{border-color:#829f55;box-shadow:0 -10px 35px -17px #729244}
+[data-theme=light] .screen span,[data-theme=light] .seat-note{color:#63705c}
+[data-theme=light] .seat,[data-theme=light] .seat-legend i{background:#edf4e1;border-color:#8ba56b;color:#3f572b}
+[data-theme=light] .seat:hover:not(:disabled){background:#d3e5b7}
+[data-theme=light] .seat.chosen,[data-theme=light] .seat-legend i.chosen{background:#b8da6d;border-color:#6a8d2c;color:#2a4017}
+[data-theme=light] .seat:disabled,[data-theme=light] .seat-legend i.occupied{background:#dce0d7;border-color:#c4cbbb;color:#919b86}
+[data-theme=light] .demo-note{background:#f0f4df;border-color:#d5deae;color:#52642e}
+[data-theme=light] .confirmed-ticket,[data-theme=light] .ticket-card{background:#f0f5e7;border-color:#cbd9bc}
+[data-theme=light] .confirmed-ticket p,[data-theme=light] .ticket-stub span{color:#586b45}
+[data-theme=light] .ticket-code,[data-theme=light] .ticket-stub{border-color:#b5c69d}
+[data-theme=light] .admin-box,[data-theme=light] .admin-stats article{background:#fff;border-color:#d1ddc5}
+[data-theme=light] .role-badge{background:#eaf1dc;border-color:#b6c998;color:#48651d}
+[data-theme=light] .admin-notice{background:#edf5df;border-color:#b9cf94;color:#405f24}
+[data-theme=light] .row-actions .danger-link{color:#b14632}
+[data-theme=light] .locked-session{color:#63705c}
+[data-theme=light] .poster-upload{border-color:#b6c998}
+[data-theme=light] .poster-preview{background:#e9eedf}
+@media(max-width:1150px){.site-header{gap:22px}.site-header nav{gap:18px}.header-actions{gap:10px}.user-name{display:none}}
+@media(max-width:760px){
+  .site-header,.site-header:has(.admin-nav){height:auto;min-height:73px;flex-wrap:wrap;padding-top:13px;padding-bottom:12px;gap:10px 12px}
+  .site-header .brand{font-size:25px;flex-shrink:0}
+  .site-header .header-actions,.site-header:has(.admin-nav) .header-actions{margin-left:auto;gap:8px}
+  .site-header nav,.site-header:has(.admin-nav) nav{order:3;width:100%;height:33px;gap:24px}
+  .site-header .nav-link.active:after{bottom:0}
+  .preference-control{height:33px;min-width:33px;padding:0 7px}
+  .theme-control{padding:0}
+  .header-preferences{gap:5px}
+}
+@media(max-width:390px){.site-header .brand{font-size:23px;gap:5px}.site-header .header-actions{gap:5px}.header-actions .button.small{font-size:9px;padding:0 7px}.preference-control{min-width:30px}.language-control{font-size:9px;gap:4px;padding:0 6px}}

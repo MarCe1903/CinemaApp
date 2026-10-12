@@ -1,0 +1,9 @@
+.art.uploaded-art{background:#111610}
+.art.uploaded-art>img{display:block;width:100%;height:100%;object-fit:cover}
+.art.uploaded-art.hero-art>img{object-position:center 30%}
+.poster-upload{display:grid;gap:12px;border:1px dashed #526338;border-radius:8px;padding:14px}
+.poster-upload small{font-size:11px;line-height:1.6}
+.poster-upload input[type=file]{padding:10px;width:100%;font-size:11px}
+.poster-upload input::file-selector-button{background:#d5f66b;color:#1b2513;border:0;border-radius:5px;padding:8px 10px;margin-right:8px;cursor:pointer;font:inherit}
+.poster-preview{display:block;width:150px;max-width:100%;aspect-ratio:2/3;object-fit:contain;background:#111610;border:1px solid var(--line);border-radius:7px;justify-self:center}
+.film-swatch>img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
